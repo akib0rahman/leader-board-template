@@ -115,14 +115,26 @@ main{
 .fa-star{
     font-size: 12px;
 }
+
+/* -----------------
+    mobile phone
+------------------- */
 @media only screen and (max-width: 576px) {
     .container{
         width: 100%;
     }
-    .players {
+    .players,.blogs {
         grid-template-columns: repeat(1,1fr);
     }
-    .player {
+    .courses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .course{
+        margin-bottom: 20px;
+    }
+    .player,.blog {
         flex-direction: column;
         align-items: center;
     }
